@@ -93,6 +93,18 @@ nav ul li:last-child:hover {
 	color: white;
 }
 
+/* Slideshow */
+
+.slideshow-container {
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+}
+.dot-section {
+    display: flex;
+    justify-content: center;
+}
+
 /* Button */
 
 .button {
