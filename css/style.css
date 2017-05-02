@@ -100,12 +100,69 @@ nav ul li:last-child:hover {
     position: relative;
     margin: 0 auto;
 }
+/*.slides {
+    display: none;
+}*/
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 20px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.8s ease;
+    border-radius: 5%;
+}
+.next {
+    right: 0;
+}
+.prev:hover, .next:hover {
+    background-color: #F54952;
+}
+.text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    font-size: 30px;
+    box-sizing: border-box;
+    width: 100%;
+    bottom: 10px;
+}
 .dot-section {
     display: flex;
     justify-content: center;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #000;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: grey;
 }
 
-/* Button */
+/* Slideshow animation */
+
+.fade {
+    animation: fade;
+    animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Button "Click me!" */
 
 .button {
     display: flex;
