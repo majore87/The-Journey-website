@@ -78,34 +78,25 @@ nav ul li:last-child:hover {
     border-color: #8e44ad;
 }
 
-/* Jumbotron */
-
-.jumbotron {
-	display: flex;
-	background-image: url("../images/mount_doom.jpg");
-	background-size: cover;
-	justify-content: center;
-	align-items: center;
-	border: 3px solid;
-	height: 70vh;
-}
-.jumbotron h1 {
-	color: white;
-}
-
 /* Slideshow */
 
 .slideshow-container {
+    display: block;
     max-width: 1200px;
     position: relative;
     margin: 0 auto;
+    height: 70vh;
+    overflow: hidden;
+    box-sizing: border-box;
 }
-/*.slides {
+.slides {
     display: none;
-}*/
+}
 .prev, .next {
     position: absolute;
+    cursor: pointer;
     top: 50%;
+    margin-top: -20px;
     width: auto;
     padding: 20px;
     color: #FFF;
@@ -120,29 +111,35 @@ nav ul li:last-child:hover {
 .prev:hover, .next:hover {
     background-color: #F54952;
 }
+a i.fa {
+    font-size: 45px;
+}
 .text {
     position: absolute;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     color: #FFF;
-    font-size: 30px;
+    font-size: 25px;
     box-sizing: border-box;
     width: 100%;
     bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
 }
 .dot-section {
-    display: flex;
-    justify-content: center;
+    display: block;
+    text-align: center;
+}
+.dot {
+    cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 2px;
-    background-color: #000;
+    margin: 10px 2px;
+    background-color: #AFAFB1;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
 }
 .active, .dot:hover {
-    background-color: grey;
+    background-color: #000;
 }
 
 /* Slideshow animation */
@@ -251,6 +248,7 @@ nav ul li:last-child:hover {
 }
 
 /* Gandalf quote */
+
 .animation-ring h1, p {
     font-family: 'Eagle Lake', cursive;
 }
@@ -265,6 +263,7 @@ nav ul li:last-child:hover {
 }
 
 /* Gallery */
+
 .img-1 {background-image: url('../images/gallery/balrog.jpg');}
 .img-2 {background-image: url('../images/gallery/dragon_lair.jpg');}
 .img-3 {background-image: url('../images/gallery/dwarven_fortress.jpg');}
@@ -363,6 +362,6 @@ footer .container {
 }
 .copyright, .contact-data {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 }

@@ -6,7 +6,6 @@ function checkOnclickEvent(param) {
 // Take button which starts the animation
 
 var buttonAnimation = document.getElementById('animation-start');
-console.log(buttonAnimation);
 
 //Listener for button to add new element div, h1
 buttonAnimation.addEventListener('click', function() {
