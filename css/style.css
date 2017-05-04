@@ -170,19 +170,25 @@ a i.fa {
 .animation-button {
     display: flex;
     justify-content: center;
+    cursor: pointer;
     align-items: center;
-    min-width: 200px;
-    min-height: 100px;
+    min-width: 300px;
+    min-height: 80px;
     background-color: #C13277;
     border: none;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     transition: 0.5s;
+    border-radius:  50px;
+    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, .2);
 }
 .animation-button:hover {
     transform: scale(1.1);
     background-color: #F54952;
-    font-size: 25px;
+}
+.back-button {
+    margin: 0 auto;
+    margin-top: 100px;
 }
 
 /* Ring animation */
@@ -191,11 +197,12 @@ a i.fa {
     max-width: 500px;
     max-height: 500px;
     position: relative;
+    display: block;
+    margin: 200px auto;
 }
 .ring {
+    display: block;
     position: absolute;
-    display: flex;
-    justify-content: center;
     transform: translate(-50%, -50%);
     width: 400px;
     height: 400px;
@@ -251,11 +258,12 @@ a i.fa {
 
 .animation-ring h1, p {
     font-family: 'Eagle Lake', cursive;
+    display: flex;
+    justify-content: flex-end;
+
 }
 .animation-ring > h1 {
-    display: flex;
     font-size: 30px;
-    justify-content: flex-start;
 }
 .animation-ring > p {
     display: flex;
