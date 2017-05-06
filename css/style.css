@@ -7,6 +7,7 @@
 body {
 	margin: 0;
 	font-family: 'Open Sans', sans-serif;
+    background-color: #F4F4F4;
 }
 .container {
 	display: flex;
@@ -82,7 +83,7 @@ nav ul li:last-child:hover {
 
 .slideshow-container {
     display: block;
-    max-width: 1200px;
+    width: 100%;
     position: relative;
     margin: 0 auto;
     height: 70vh;
@@ -161,7 +162,7 @@ a i.fa {
 
 /* Button "Click me!" */
 
-.button {
+.button-start {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -353,7 +354,6 @@ body .element:hover {
 /* Footer */
 
 footer {
-
 	background: linear-gradient(135deg, #DC3E64, #fa9600);
     background: -webkit-linear-gradient(135deg, #DC3E64, #fa9600);
 	color: white;
@@ -377,18 +377,61 @@ footer .container {
     justify-content: flex-end;
     align-items: center;
 }
+
+/*Social media buttons*/
+
 footer .social {
     display: flex;
     justify-content: center;
     flex-grow: 6;
-    max-width: 100%;
-    min-height: 200px;
+    align-items: center;
+    margin: 0 auto;
     width: 500px;
-    float: none;
+    padding: 50px;
 }
 footer .icon-btn{
-    max-width: 75px;
-    max-height: 75px;
-    width: 100%;
-    height: 100px;
+    width: 75px;
+    height: 75px;
+    border: none;
+    background-color: #F4F4F4;
+    border-radius: 50%;
+    margin: 0px 10px;
+    cursor: pointer;
+    font-size: 40px;
 }
+footer .icon-btn:hover {
+    transform: scale(1.10);
+    transition: .4s;
+    color: #FFF;
+}
+footer .twitter {
+    color: #4099FF;
+}
+footer .facebook {
+    color: #3B5998;
+}
+footer .google-plus {
+    color: #DB5A3C;
+}
+footer .instagram {
+    color: #5C3D2E;
+}
+footer .github {
+    color: #4183C4;
+}
+footer .twitter:hover {
+    background-color: #4099FF;
+}
+footer .facebook:hover {
+    background-color: #3B5998;
+}
+footer .google-plus:hover {
+    background-color: #DB5A3C;
+}
+footer .instagram:hover {
+    background-color: #5C3D2E;
+}
+footer .github:hover {
+    background-color: #4183C4;
+}
+
