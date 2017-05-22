@@ -30,7 +30,7 @@ header .container {
     font-size: 30px;
     width: 20%;
     height: 80px;
-    background-color: white;
+    background-color: #F4F4F4;
     text-transform: uppercase;
 }
 nav ul {
@@ -83,7 +83,7 @@ nav ul li:last-child:hover {
 
 .slideshow-container {
     display: block;
-    width: 100%;
+    max-width: 100%;
     position: relative;
     margin: 0 auto;
     height: 70vh;
@@ -92,6 +92,15 @@ nav ul li:last-child:hover {
 }
 .slides {
     display: none;
+}
+.slides img {
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 .prev, .next {
     position: absolute;
@@ -273,18 +282,18 @@ a i.fa {
 
 /* Gallery */
 
-.img-1 {background-image: url('../images/gallery/balrog.jpg');}
-.img-2 {background-image: url('../images/gallery/dragon_lair.jpg');}
-.img-3 {background-image: url('../images/gallery/dwarven_fortress.jpg');}
-.img-4 {background-image: url('../images/gallery/elven_garden.jpg');}
-.img-5 {background-image: url('../images/gallery/journey.jpg');}
-.img-6 {background-image: url('../images/gallery/lavafalls.jpg');}
-.img-7 {background-image: url('../images/gallery/lothlorien.jpg');}
-.img-8 {background-image: url('../images/gallery/ring.jpg');}
-.img-9 {background-image: url('../images/gallery/waterfall_bridge.jpg');}
-.img-10 {background-image: url('../images/gallery/orcs_march.jpg');}
-.img-11 {background-image: url('../images/gallery/orcs_gundabag.jpg');}
-.img-12 {background-image: url('../images/gallery/mirkwood_forest.jpg');}
+.img-1 {background-image: url('../images/fire_performance.jpg');}
+.img-2 {background-image: url('../images/campfire.jpeg');}
+.img-3 {background-image: url('../images/wood.jpeg');}
+.img-4 {background-image: url('../images/ash.jpeg');}
+.img-5 {background-image: url('../images/fire_mouth.jpg');}
+.img-6 {background-image: url('../images/campfire2.jpeg');}
+.img-7 {background-image: url('../images/fire_circle.jpg');}
+.img-8 {background-image: url('../images/circle3.jpeg');}
+.img-9 {background-image: url('../images/fireworks_circle.jpeg');}
+.img-10 {background-image: url('../images/inferno.jpg');}
+.img-11 {background-image: url('../images/explosion.jpg');}
+.img-12 {background-image: url('../images/fireworks_circle2.jpg');}
 
 .gallery {
     background-color: #131212;
@@ -362,7 +371,6 @@ footer .container {
     margin-top: 50px;
 	display: flex;
 	height: 100px;
-	display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -390,8 +398,8 @@ footer .social {
     padding: 50px;
 }
 footer .icon-btn{
-    width: 75px;
-    height: 75px;
+    width: 65px;
+    height: 65px;
     border: none;
     background-color: #F4F4F4;
     border-radius: 50%;
@@ -400,8 +408,8 @@ footer .icon-btn{
     font-size: 40px;
 }
 footer .icon-btn:hover {
-    transform: scale(1.10);
     transition: .4s;
+    transform: scale(1.2);
     color: #FFF;
 }
 footer .twitter {
