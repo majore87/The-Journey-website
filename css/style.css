@@ -345,9 +345,11 @@ body .element:hover {
     margin: 50px auto;
 }
 .benefits .row .benefits-element {
-    margin: 0 50px;
     text-align: center;
     cursor: pointer;
+}
+.benefits .row .middle-element {
+    margin: 0 50px;
 }
 .benefits .row .benefits-element .benefits-btn{
     font-size: 80px;
@@ -383,6 +385,63 @@ body .element:hover {
 }
 .buy .row .buy-element {
     margin: 50px auto;
+}
+.span-label, h1, p {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.buy .row .buy-element .span-label{
+    border-radius: 10px;
+    color: #F4F4F4;
+    display: block;
+    height: 30px;
+    width: 110px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #ccccd7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buy .row .buy-element .buy{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #F4F4F4;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.buy .row .buy-element .stars .star{
+    border-radius: 10px;
+    border: none;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #F54952;
+    cursor: pointer;
+}
+.buy .row .buy-element:hover {
+    background-color: #F4F4F4;
+    transition: .5s;
+    border-radius: 10px;
+}
+.buy .row .buy-element:hover .span-label {
+    background-color: #C63473;
+    transition: .5s;
+    border-radius: 10px;
+}
+.buy .row .buy-element:hover .buy {
+    background-color: #F54952;
+    color: #F4F4F4;
+    transition: .5s;
+}
+.buy .row .buy-element:hover .stars .star{
+    color: #fa9600;
+    background-color: #F4F4F4;
+    cursor: pointer;
+    transition: .5s;
 }
 
 /* Footer */
