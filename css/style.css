@@ -17,9 +17,9 @@ body {
 
 /* Navigation */
 
-header {
+/*header {
   	border-bottom: 2px solid black;
-}
+}*/
 header .container {
 	display: flex;
 }
@@ -266,11 +266,10 @@ a i.fa {
 
 /* Gandalf quote */
 
-.animation-ring h1, p {
+.animation-ring > h1, .animation-ring > p {
     font-family: 'Eagle Lake', cursive;
     display: flex;
     justify-content: flex-end;
-
 }
 .animation-ring > h1 {
     font-size: 30px;
@@ -329,6 +328,7 @@ body .element:hover {
 .inside-container, .flex-column, .flex-row {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 .flex-column {
     flex-direction: column;
@@ -337,27 +337,38 @@ body .element:hover {
     flex: 1;
 }
 
-/* Cards */
+/* Benefits */
 
-.cards {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+.benefits {
+    max-width: 1200px;
+    margin: 50px auto;
 }
-.card {
-	margin: 10px;
-	display: flex;
-	justify-content: center;
-  	align-items: center;
-	min-width: 200px;
- 	min-height: 100px;
- 	background-color: #C13277;
- 	color: white;
- 	transition: 0.5s;
+.benefits .row {
+    display: flex;
+    margin: 50px auto;
 }
-.card:hover {
-	transform: scale(1.1);
-	background-color: #DC3E64;
+.benefits .row .benefits-element {
+    margin: 0 50px;
+    text-align: center;
+    cursor: pointer;
+}
+.benefits .row .benefits-element .benefits-btn{
+    font-size: 80px;
+    border: none;
+    background-color: #F4F4F4;
+    cursor: pointer;
+    color: #fa9600;
+}
+.benefits .row .benefits-element p {
+    color: #808080;
+}
+.benefits .row .benefits-element:hover h1 {
+    color: #fa9600;
+    transition: .3s;
+}
+.benefits .row .benefits-element:hover .benefits-btn{
+    color: #DC3E64;
+    transition: .3s;
 }
 
 /* Footer */
@@ -399,14 +410,14 @@ footer .social {
     padding: 50px;
 }
 footer .icon-btn{
-    width: 75px;
-    height: 75px;
+    width: 55px;
+    height: 55px;
     border: none;
     background-color: #F4F4F4;
     border-radius: 50%;
     margin: 0px 10px;
     cursor: pointer;
-    font-size: 40px;
+    font-size: 30px;
 }
 footer .icon-btn:hover {
     transform: scale(1.10);
