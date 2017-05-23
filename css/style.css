@@ -17,9 +17,6 @@ body {
 
 /* Navigation */
 
-/*header {
-  	border-bottom: 2px solid black;
-}*/
 header .container {
 	display: flex;
 }
@@ -369,6 +366,23 @@ body .element:hover {
 .benefits .row .benefits-element:hover .benefits-btn{
     color: #DC3E64;
     transition: .3s;
+}
+
+/* Buy section */
+
+.buy {
+    max-width: 100%;
+    margin: 50px auto;
+    background-color: #F54952;
+}
+.buy .row {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+.buy .row .buy-element {
+    margin: 50px auto;
 }
 
 /* Footer */
