@@ -196,7 +196,7 @@ a i.fa {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 50px auto;
+    margin: 200px auto;
 }
 .animation-button {
     display: flex;
@@ -205,17 +205,17 @@ a i.fa {
     align-items: center;
     width: 350px;
     height: 70px;
-    background-color: #C13277;
+    background-color: #F54952;
     border: none;
     color: white;
     font-size: 25px;
     transition: 0.5s;
-    border-radius:  50px;
+    border-radius: 10px;
     box-shadow: 0 20px 30px 0 rgba(0, 0, 0, .2);
 }
 .animation-button:hover {
     transform: scale(1.1);
-    background-color: #F54952;
+    background-color: #C13277;
 }
 .back-button {
     margin: 0 auto;
@@ -323,7 +323,7 @@ a i.fa {
 
 .gallery {
     background-color: #131212;
-    margin: 50px auto;
+    margin: 200px auto;
 }
 .gallery h1 {
     color: grey;
@@ -370,7 +370,7 @@ body .element:hover {
 
 .benefits {
     max-width: 1200px;
-    margin: 50px auto;
+    margin: 200px auto;
 }
 .benefits .row-benefits {
     display: flex;
@@ -408,7 +408,7 @@ body .element:hover {
 
 .buy {
     max-width: 100%;
-    margin: 50px auto;
+    margin: 200px auto;
     background-color: #F54952;
 }
 .buy .row-buy {
@@ -502,14 +502,29 @@ body .element:hover {
 }
 
 /*------------------------------*/
+/* Download section */
+/*------------------------------*/
+
+.download {
+    max-width: 1200px;
+    margin: 200px auto;
+    text-align: center;
+}
+.download .download-container .download-button {
+    margin: auto;
+    margin-top: 50px;
+}
+
+
+/*------------------------------*/
 /* Contact section */
 /*------------------------------*/
 
 .contact-container {
     max-width: 100%;
-    margin: 50px auto;
     background: linear-gradient(180deg, #fa9600, #F54952);
     margin: 0 auto;
+    margin-top: 100px;
 }
 .contact-container .contact-row {
     max-width: 1200px;
