@@ -58,6 +58,7 @@ header .container {
     list-style: none;
     width: 600px;
     padding: 0;
+    border-radius: 10px;
 }
 nav ul li {
   	display: flex;
@@ -67,7 +68,7 @@ nav ul li {
     background-position: 100% 0;
     background-size: 300%;
     cursor: pointer;
-    transition: 1s;
+    transition: 1.2s;
 }
 nav ul li a {
   	text-decoration: none;
@@ -78,24 +79,28 @@ nav ul li:first-child:hover {
     color: #8e44ad;
     background-image: linear-gradient(45deg, #C63473 30%, transparent 60%);
     border-color: #8e44ad;
+    border-radius: 10px;
 }
 nav ul li:nth-child(2):hover {
     background-position: 0 100%;
     color: #8e44ad;
     background-image: linear-gradient(90deg, #C63473 30%, transparent 60%);
     border-color: #8e44ad;
+    border-radius: 10px;
 }
 nav ul li:nth-child(3):hover {
     background-position: 0 100%;
     color: #8e44ad;
     background-image: linear-gradient(135deg, #C63473 30%, transparent 60%);
     border-color: #8e44ad;
+    border-radius: 10px;
 }
 nav ul li:last-child:hover {
     background-position: 0 100%;
     color: #8e44ad;
     background-image: linear-gradient(45deg, #C63473 30%, transparent 60%);
     border-color: #8e44ad;
+    border-radius: 10px;
 }
 
 /*------------------------------*/
@@ -514,7 +519,14 @@ body .element:hover {
     margin: auto;
     margin-top: 50px;
 }
-
+.download .download-container h1 {
+    font-size: 30px;
+    color: #808080;
+}
+.download .download-container p {
+    font-weight: bold;
+    font-size: 18px;
+}
 
 /*------------------------------*/
 /* Contact section */
@@ -535,6 +547,7 @@ body .element:hover {
 }
 .contact-container .contact-row h1 {
     color: #F4F4F4;
+    text-transform: uppercase;
 }
 .contact-container .contact-row p {
     color: #F4F4F4;
@@ -550,7 +563,7 @@ body .element:hover {
 }
 .contact-container .contact-row .about {
     text-align: center;
-    width: 250px;
+    width: 350px;
 }
 
 /*------------------------------*/
