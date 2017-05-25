@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Eagle+Lake');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 /*------------------------------*/
 /* Global Styles */
 /*------------------------------*/
@@ -8,7 +9,8 @@
 }
 body {
 	margin: 0;
-	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Lato', sans-serif;
     background-color: #F4F4F4;
 }
 .container {
@@ -34,18 +36,26 @@ header .container {
     background-color: #F4F4F4;
     text-transform: uppercase;
 }
-nav ul {
+#menu {
+    background: linear-gradient(135deg, #fa9600, #F54952);
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 80%;
+    flex-grow: 3;
+}
+/*nav ul {
 	display: flex;
 	justify-content: flex-end;
 	list-style: none;
 	width: 80%;
-}
+}*/
 nav ul li {
   	display: flex;
   	align-items: center;
 	justify-content: center;
 	width: 150px;
-	background-color: #F54952;
+	/*background-color: #F54952;*/
     background-position: 100% 0;
     background-size: 300%;
     cursor: pointer;
@@ -482,16 +492,40 @@ body .element:hover {
 }
 
 /*------------------------------*/
+/* Contact section */
+/*------------------------------*/
+
+.contact-container {
+    max-width: 100%;
+    background: linear-gradient(180deg, #fa9600, #F54952);
+    color: white;
+    margin: auto;
+    margin-bottom: 0;
+}
+
+.contact-container .contact-row {
+    display: flex;
+    margin: auto;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.contact-container .contact-row .location {
+}
+.contact-container .contact-row .social {
+}
+.contact-container .contact-row .about {
+}
+
+/*------------------------------*/
 /* Footer */
 /*------------------------------*/
 
 footer {
-	background: linear-gradient(135deg, #DC3E64, #fa9600);
-    background: -webkit-linear-gradient(135deg, #DC3E64, #fa9600);
+	background: linear-gradient(180deg, #F54952, #DC3E64);
 	color: white;
 }
 footer .container {
-    margin-top: 50px;
 	display: flex;
 	height: 100px;
 	display: flex;
