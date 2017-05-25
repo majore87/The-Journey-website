@@ -18,6 +18,19 @@ body {
 	margin: 0 auto;
 }
 
+.col-1 {flex: 8.333%;}
+.col-2 {flex: 16.667%;}
+.col-3 {flex: 25%;}
+.col-4 {flex: 33.333%;}
+.col-5 {flex: 41.667%;}
+.col-6 {flex: 50%;}
+.col-7 {flex: 58.333%;}
+.col-8 {flex: 66.667%;}
+.col-9 {flex: 75%;}
+.col-10 {flex: 83.333%;}
+.col-11 {flex: 91.667%;}
+.col-12 {flex: 100%;}
+
 /*------------------------------*/
 /* Navigation */
 /*------------------------------*/
@@ -190,8 +203,8 @@ a i.fa {
     justify-content: center;
     cursor: pointer;
     align-items: center;
-    min-width: 300px;
-    min-height: 80px;
+    width: 350px;
+    height: 70px;
     background-color: #C13277;
     border: none;
     color: white;
@@ -444,7 +457,6 @@ body .element:hover {
     background-color: #F4F4F4;
     cursor: pointer;
     margin: 30px auto 20px 50px;
-   /* margin-left: 50px;*/
     text-transform: uppercase;
 }
 .buy .row-buy .buy-element .stars .star {
@@ -454,7 +466,6 @@ body .element:hover {
     font-weight: bold;
     background-color: #F54952;
     padding-bottom: 20px;
-
 }
 .buy .row-buy .buy-element .stars .star:first-child {
     margin-left: 50px;
@@ -496,81 +507,42 @@ body .element:hover {
 
 .contact-container {
     max-width: 100%;
+    margin: 50px auto;
     background: linear-gradient(180deg, #fa9600, #F54952);
-    color: white;
-    margin: auto;
-    margin-bottom: 0;
+    margin: 0 auto;
 }
 .contact-container .contact-row {
-    display: flex;
-    margin: 0 auto;
-    padding: 50px 0;
     max-width: 1200px;
-    justify-content: space-between;
-    align-items: center;
-}
-.contact-container .contact-row .location {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin: 0;
-}
-.contact-container .contact-row .social {
-    margin: 0 100px;
+    padding: 50px 0;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    margin: 0 auto;
+}
+.contact-container .contact-row h1 {
+    color: #F4F4F4;
+}
+.contact-container .contact-row p {
+    color: #F4F4F4;
+}
+.contact-container .contact-row .location {
+    text-align: center;
+}
+.contact-container .contact-row .social {
+    text-align: center;
+}
+.contact-container .contact-row .social .social-buttons {
+    text-align: center;
 }
 .contact-container .contact-row .about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    justify-content: flex-end;
+    text-align: center;
+    width: 250px;
 }
 
 /*------------------------------*/
-/* Footer */
+/* Social media buttons */
 /*------------------------------*/
 
-footer {
-	background: linear-gradient(180deg, #F54952, #DC3E64);
-	color: white;
-}
-footer .container {
-	display: flex;
-	height: 100px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.copyright {
-    flex-grow: 1;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.contact-data {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-/*------------------------------*/
-/*Social media buttons*/
-/*------------------------------*/
-
-footer .social {
-    display: flex;
-    justify-content: center;
-    flex-grow: 6;
-    align-items: center;
-    margin: 0 auto;
-    width: 500px;
-    padding: 50px;
-}
-footer .icon-btn {
+.social .social-buttons .icon-btn {
     width: 55px;
     height: 55px;
     border: none;
@@ -580,39 +552,68 @@ footer .icon-btn {
     cursor: pointer;
     font-size: 30px;
 }
-footer .icon-btn:hover {
+.social .social-buttons .icon-btn:hover {
     transform: scale(1.10);
     transition: .4s;
     color: #FFF;
 }
-footer .twitter {
+.social .social-buttons .twitter {
     color: #4099FF;
 }
-footer .facebook {
+.social .social-buttons .facebook {
     color: #3B5998;
 }
-footer .google-plus {
+.social .social-buttons .google-plus {
     color: #DB5A3C;
 }
-footer .instagram {
+.social .social-buttons .instagram {
     color: #5C3D2E;
 }
-footer .github {
+.social .social-buttons .github {
     color: #4183C4;
 }
-footer .twitter:hover {
+.social .social-buttons .twitter:hover {
     background-color: #4099FF;
 }
-footer .facebook:hover {
+.social .social-buttons .facebook:hover {
     background-color: #3B5998;
 }
-footer .google-plus:hover {
+.social .social-buttons .google-plus:hover {
     background-color: #DB5A3C;
 }
-footer .instagram:hover {
+.social .social-buttons .instagram:hover {
     background-color: #5C3D2E;
 }
-footer .github:hover {
+.social .social-buttons .github:hover {
     background-color: #4183C4;
 }
+
+/*------------------------------*/
+/* Footer */
+/*------------------------------*/
+
+footer {
+	background: linear-gradient(180deg, #F54952, #DC3E64);
+	color: #F4F4F4;
+}
+footer .container {
+	display: flex;
+	height: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.copyright {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 50px;
+}
+.contact-data {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
 
