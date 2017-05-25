@@ -25,10 +25,13 @@ body {
 
 header .container {
 	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .Logo {
 	display: flex;
 	align-items: center;
+    justify-content: flex-start;
 	font-weight: bold;
     font-size: 30px;
     width: 20%;
@@ -41,21 +44,14 @@ header .container {
     display: flex;
     justify-content: flex-end;
     list-style: none;
-    width: 80%;
-    flex-grow: 3;
+    width: 600px;
+    padding: 0;
 }
-/*nav ul {
-	display: flex;
-	justify-content: flex-end;
-	list-style: none;
-	width: 80%;
-}*/
 nav ul li {
   	display: flex;
   	align-items: center;
 	justify-content: center;
 	width: 150px;
-	/*background-color: #F54952;*/
     background-position: 100% 0;
     background-size: 300%;
     cursor: pointer;
@@ -480,6 +476,7 @@ body .element:hover {
     background-color: #F54952;
     color: #F4F4F4;
     transition: .3s;
+    text-transform: uppercase;
 }
 .buy .row-buy .buy-element:hover p {
     color: #808080;
@@ -502,19 +499,34 @@ body .element:hover {
     margin: auto;
     margin-bottom: 0;
 }
-
 .contact-container .contact-row {
     display: flex;
-    margin: auto;
-    padding: 50px;
-    justify-content: center;
+    margin: 0 auto;
+    padding: 50px 0;
+    max-width: 1200px;
+    justify-content: space-between;
     align-items: center;
 }
 .contact-container .contact-row .location {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
 }
 .contact-container .contact-row .social {
+    margin: 0 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
 }
 .contact-container .contact-row .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    justify-content: flex-end;
 }
 
 /*------------------------------*/
