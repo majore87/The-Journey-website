@@ -9,7 +9,6 @@
 }
 body {
 	margin: 0;
-	/*font-family: 'Open Sans', sans-serif;*/
     font-family: 'Lato', sans-serif;
     background-color: #F4F4F4;
 }
@@ -64,25 +63,25 @@ nav ul li a {
 nav ul li:first-child:hover {
     background-position: 0 100%;
     color: #8e44ad;
-    background-image: linear-gradient(45deg, #C63473 50%, transparent 60%);
+    background-image: linear-gradient(45deg, #C63473 30%, transparent 60%);
     border-color: #8e44ad;
 }
 nav ul li:nth-child(2):hover {
     background-position: 0 100%;
     color: #8e44ad;
-    background-image: linear-gradient(90deg, #C63473 50%, transparent 60%);
+    background-image: linear-gradient(90deg, #C63473 30%, transparent 60%);
     border-color: #8e44ad;
 }
 nav ul li:nth-child(3):hover {
     background-position: 0 100%;
     color: #8e44ad;
-    background-image: linear-gradient(135deg, #C63473 50%, transparent 60%);
+    background-image: linear-gradient(135deg, #C63473 30%, transparent 60%);
     border-color: #8e44ad;
 }
 nav ul li:last-child:hover {
     background-position: 0 100%;
     color: #8e44ad;
-    background-image: linear-gradient(45deg, #C63473 50%, transparent 60%);
+    background-image: linear-gradient(45deg, #C63473 30%, transparent 60%);
     border-color: #8e44ad;
 }
 
@@ -444,8 +443,9 @@ body .element:hover {
     font-weight: bold;
     background-color: #F4F4F4;
     cursor: pointer;
-    margin: 50px auto;
-    margin-left: 50px;
+    margin: 30px auto 20px 50px;
+   /* margin-left: 50px;*/
+    text-transform: uppercase;
 }
 .buy .row-buy .buy-element .stars .star {
     border-radius: 10px;
@@ -453,6 +453,8 @@ body .element:hover {
     font-size: 25px;
     font-weight: bold;
     background-color: #F54952;
+    padding-bottom: 20px;
+
 }
 .buy .row-buy .buy-element .stars .star:first-child {
     margin-left: 50px;
@@ -466,6 +468,7 @@ body .element:hover {
     background-color: #F4F4F4;
     transition: .3s;
     border-radius: 10px;
+    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, .2);
 }
 .buy .row-buy .buy-element:hover .span-label {
     background-color: #C63473;
@@ -476,7 +479,6 @@ body .element:hover {
     background-color: #F54952;
     color: #F4F4F4;
     transition: .3s;
-    text-transform: uppercase;
 }
 .buy .row-buy .buy-element:hover p {
     color: #808080;
@@ -519,7 +521,7 @@ body .element:hover {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
+    flex-direction: column;
 }
 .contact-container .contact-row .about {
     display: flex;
@@ -540,7 +542,6 @@ footer {
 footer .container {
 	display: flex;
 	height: 100px;
-	display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
