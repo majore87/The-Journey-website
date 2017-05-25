@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Eagle+Lake');
+/*------------------------------*/
 /* Global Styles */
+/*------------------------------*/
 
 * {
 	box-sizing: border-box;
@@ -15,7 +17,9 @@ body {
 	margin: 0 auto;
 }
 
+/*------------------------------*/
 /* Navigation */
+/*------------------------------*/
 
 header .container {
 	display: flex;
@@ -76,7 +80,9 @@ nav ul li:last-child:hover {
     border-color: #8e44ad;
 }
 
+/*------------------------------*/
 /* Slideshow */
+/*------------------------------*/
 
 .slideshow-container {
     display: block;
@@ -149,7 +155,9 @@ a i.fa {
     background-color: #000;
 }
 
+/*------------------------------*/
 /* Slideshow animation */
+/*------------------------------*/
 
 .fade {
     animation: fade;
@@ -161,12 +169,10 @@ a i.fa {
     from {opacity: .4}
     to {opacity: 1}
 }
-@-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
 
+/*------------------------------*/
 /* Button "Click me!" */
+/*------------------------------*/
 
 .button-start {
     display: flex;
@@ -198,7 +204,9 @@ a i.fa {
     margin-top: 100px;
 }
 
+/*------------------------------*/
 /* Ring animation */
+/*------------------------------*/
 
 .animation-ring {
     max-width: 500px;
@@ -261,7 +269,9 @@ a i.fa {
     }
 }
 
+/*------------------------------*/
 /* Gandalf quote */
+/*------------------------------*/
 
 .animation-ring > h1, .animation-ring > p {
     font-family: 'Eagle Lake', cursive;
@@ -276,7 +286,9 @@ a i.fa {
     font-size: 25px;
 }
 
+/*------------------------------*/
 /* Gallery */
+/*------------------------------*/
 
 .img-1 {background-image: url('../images/fire_performance.jpg');}
 .img-2 {background-image: url('../images/campfire.jpeg');}
@@ -302,7 +314,7 @@ a i.fa {
     justify-content: center;
     padding-top: 40px;
 }
-.gallery:hover h1{
+.gallery:hover h1 {
     color: white;
 }
 .element {
@@ -334,63 +346,77 @@ body .element:hover {
     flex: 1;
 }
 
+/*------------------------------*/
 /* Benefits */
+/*------------------------------*/
 
 .benefits {
     max-width: 1200px;
     margin: 50px auto;
 }
-.benefits .row {
+.benefits .row-benefits {
     display: flex;
     margin: 50px auto;
 }
-.benefits .row .benefits-element {
+.benefits .row-benefits .benefits-element {
     text-align: center;
     cursor: pointer;
 }
-.benefits .row .middle-element {
+.benefits .row-benefits .middle-element {
     margin: 0 50px;
 }
-.benefits .row .benefits-element .benefits-btn{
+.benefits .row-benefits .benefits-element .benefits-btn {
     font-size: 80px;
     border: none;
     background-color: #F4F4F4;
     cursor: pointer;
     color: #fa9600;
 }
-.benefits .row .benefits-element p {
+.benefits .row-benefits .benefits-element p {
     color: #808080;
 }
-.benefits .row .benefits-element:hover h1 {
+.benefits .row-benefits .benefits-element:hover h1 {
     color: #fa9600;
     transition: .3s;
 }
-.benefits .row .benefits-element:hover .benefits-btn{
+.benefits .row-benefits .benefits-element:hover .benefits-btn{
     color: #DC3E64;
     transition: .3s;
 }
 
+/*------------------------------*/
 /* Buy section */
+/*------------------------------*/
 
 .buy {
     max-width: 100%;
     margin: 50px auto;
     background-color: #F54952;
 }
-.buy .row {
+.buy .row-buy {
     max-width: 1200px;
     display: flex;
     flex-direction: row;
     margin: auto;
 }
-.buy .row .buy-element {
+.buy .row-buy .buy-element {
     margin: 50px auto;
 }
-.span-label, h1, p {
-    margin-left: 10px;
+.buy .row-buy .buy-element > .span-label {
+    margin-left: 50px;
     margin-top: 20px;
 }
-.buy .row .buy-element .span-label{
+.buy .row-buy .buy-element h1 {
+    margin-left: 50px;
+}
+.buy .row-buy .buy-element > p {
+    margin-left: 50px;
+}
+.buy .row-buy .buy-element > p {
+    margin-right: 100px;
+    text-align: left;
+}
+.buy .row-buy .buy-element .span-label {
     border-radius: 10px;
     color: #F4F4F4;
     display: block;
@@ -403,7 +429,7 @@ body .element:hover {
     justify-content: center;
     align-items: center;
 }
-.buy .row .buy-element .buy{
+.buy .row-buy .buy-element .buy-button {
     width: 150px;
     height: 50px;
     border-radius: 10px;
@@ -412,39 +438,52 @@ body .element:hover {
     font-weight: bold;
     background-color: #F4F4F4;
     cursor: pointer;
-    margin-left: 10px;
+    margin: 50px auto;
+    margin-left: 50px;
 }
-.buy .row .buy-element .stars .star{
+.buy .row-buy .buy-element .stars .star {
     border-radius: 10px;
     border: none;
     font-size: 25px;
     font-weight: bold;
     background-color: #F54952;
-    cursor: pointer;
 }
-.buy .row .buy-element:hover {
-    background-color: #F4F4F4;
-    transition: .5s;
-    border-radius: 10px;
-}
-.buy .row .buy-element:hover .span-label {
-    background-color: #C63473;
-    transition: .5s;
-    border-radius: 10px;
-}
-.buy .row .buy-element:hover .buy {
-    background-color: #F54952;
-    color: #F4F4F4;
-    transition: .5s;
-}
-.buy .row .buy-element:hover .stars .star{
-    color: #fa9600;
-    background-color: #F4F4F4;
-    cursor: pointer;
-    transition: .5s;
+.buy .row-buy .buy-element .stars .star:first-child {
+    margin-left: 50px;
 }
 
+/*------------------------------*/
+/* Buy section HOVER */
+/*------------------------------*/
+
+.buy .row-buy .buy-element:hover {
+    background-color: #F4F4F4;
+    transition: .3s;
+    border-radius: 10px;
+}
+.buy .row-buy .buy-element:hover .span-label {
+    background-color: #C63473;
+    transition: .3s;
+    border-radius: 10px;
+}
+.buy .row-buy .buy-element:hover .buy-button {
+    background-color: #F54952;
+    color: #F4F4F4;
+    transition: .3s;
+}
+.buy .row-buy .buy-element:hover p {
+    color: #808080;
+    transition: .3s;
+}
+.buy .row-buy .buy-element:hover .stars .star {
+    color: #fa9600;
+    background-color: #F4F4F4;
+    transition: .3s;
+}
+
+/*------------------------------*/
 /* Footer */
+/*------------------------------*/
 
 footer {
 	background: linear-gradient(135deg, #DC3E64, #fa9600);
@@ -471,7 +510,9 @@ footer .container {
     align-items: center;
 }
 
+/*------------------------------*/
 /*Social media buttons*/
+/*------------------------------*/
 
 footer .social {
     display: flex;
@@ -482,7 +523,7 @@ footer .social {
     width: 500px;
     padding: 50px;
 }
-footer .icon-btn{
+footer .icon-btn {
     width: 55px;
     height: 55px;
     border: none;
