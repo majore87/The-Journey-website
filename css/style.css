@@ -17,6 +17,10 @@ body {
 	max-width: 1200px;
 	margin: 0 auto;
 }
+p::selection, h1::selection {
+    background-color: #fa9600;
+    color: #FFF;
+}
 
 .col-1 {flex: 8.333%;}
 .col-2 {flex: 16.667%;}
@@ -316,24 +320,30 @@ a i.fa {
 .story-section .story-title {
     max-width: 1200px;
     margin: 0 auto 100px auto;
+    padding: 20px;
+}
+.story-section .story-title:hover {
+    transition: .3s;
+    box-shadow: 0 20px 30px 20px rgba(0, 0, 0, .2);
+    cursor: pointer;
 }
 .story-section .story-container {
     max-width: 1200px;
-    margin: 0 auto 100px auto;
+    margin: 0 auto;
     display: flex;
 }
 .story-section h1 {
     font-size: 40px;
 }
 .story-section .story-container .story h1 {
-    font-size: 20px;
+    font-size: 30px;
     color: #6b6b6b;
     text-align: left;
 }
 .story-section .story-container .story p {
     color: #808080;
     text-align: left;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 
@@ -426,9 +436,13 @@ body .element:hover {
 .benefits .row-benefits .benefits-element p {
     color: #808080;
 }
+.benefits .row-benefits .benefits-element h1 {
+    text-transform: uppercase;
+}
 .benefits .row-benefits .benefits-element:hover h1 {
     color: #fa9600;
     transition: .3s;
+
 }
 .benefits .row-benefits .benefits-element:hover .benefits-btn{
     color: #DC3E64;
