@@ -338,6 +338,10 @@ a i.fa {
     color: #808080;
     text-align: left;
     font-size: 18px;
+    padding-right: 20px;
+}
+.story-section .story-container .story-last p {
+    padding-right: 0;
 }
 
 /*------------------------------*/
@@ -359,7 +363,7 @@ a i.fa {
 
 .gallery {
     background-color: #131212;
-    margin: 200px auto;
+    margin: 200px auto 150px auto;
 }
 .gallery h1 {
     color: grey;
@@ -406,18 +410,15 @@ body .element:hover {
 
 .benefits {
     max-width: 1200px;
-    margin: 200px auto;
+    margin: 150px auto 200px auto;
 }
 .benefits .row-benefits {
     display: flex;
-    margin: 50px auto;
 }
 .benefits .row-benefits .benefits-element {
     text-align: center;
     cursor: pointer;
-}
-.benefits .row-benefits .middle-element {
-    margin: 0 50px;
+    margin-top: 50px;
 }
 .benefits .row-benefits .benefits-element .benefits-btn {
     font-size: 80px;
@@ -428,6 +429,7 @@ body .element:hover {
 }
 .benefits .row-benefits .benefits-element p {
     color: #808080;
+    margin: 0 50px;
 }
 .benefits .row-benefits .benefits-element h1 {
     text-transform: uppercase;
@@ -677,10 +679,12 @@ footer .container {
 }
 
 /*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
 /* Responsive Design */
 /*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
 
-
+/*------------------------------*/
 /* Smartphones */
 /*------------------------------*/
 
@@ -700,7 +704,16 @@ footer .container {
     .col-s-12 {flex: 100%;}
 }
 
+/* Story section */
+/*------------------------------*/
 
+.story-section .story-container .story p {
+    padding-right: 0;
+}
+
+
+
+/*------------------------------*/
 /* Tablets */
 /*------------------------------*/
 
@@ -721,7 +734,17 @@ footer .container {
 
 }
 
+/* Story section */
+/*------------------------------*/
 
+.story-section .story-container .story-second p {
+    padding-right: 0;
+}
+
+
+
+
+/*------------------------------*/
 /* Desktop */
 /*------------------------------*/
 
