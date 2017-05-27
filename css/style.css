@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Eagle+Lake');
 @import url('https://fonts.googleapis.com/css?family=Lato');
+
 /*------------------------------*/
 /* Global Styles */
 /*------------------------------*/
@@ -21,19 +22,6 @@ p::selection, h1::selection {
     background-color: #fa9600;
     color: #FFF;
 }
-
-.col-1 {flex: 8.333%;}
-.col-2 {flex: 16.667%;}
-.col-3 {flex: 25%;}
-.col-4 {flex: 33.333%;}
-.col-5 {flex: 41.667%;}
-.col-6 {flex: 50%;}
-.col-7 {flex: 58.333%;}
-.col-8 {flex: 66.667%;}
-.col-9 {flex: 75%;}
-.col-10 {flex: 83.333%;}
-.col-11 {flex: 91.667%;}
-.col-12 {flex: 100%;}
 
 /*------------------------------*/
 /* Navigation */
@@ -345,7 +333,6 @@ a i.fa {
     font-size: 18px;
 }
 
-
 /*------------------------------*/
 /* Gallery */
 /*------------------------------*/
@@ -516,7 +503,7 @@ body .element:hover {
     margin-left: 50px;
 }
 
-/*------------------------------*/
+
 /* Buy section HOVER */
 /*------------------------------*/
 
@@ -606,7 +593,7 @@ body .element:hover {
     width: 350px;
 }
 
-/*------------------------------*/
+
 /* Social media buttons */
 /*------------------------------*/
 
@@ -682,6 +669,68 @@ footer .container {
     align-items: center;
 }
 
+/*-------------------------------------------------------*/
+/* Responsive Design */
+/*-------------------------------------------------------*/
 
 
+/* Smartphones */
+/*------------------------------*/
+
+@media (max-width: 767px) {
+
+    .col-s-1 {flex: 8.333%;}
+    .col-s-2 {flex: 16.667%;}
+    .col-s-3 {flex: 25%;}
+    .col-s-4 {flex: 33.333%;}
+    .col-s-5 {flex: 41.667%;}
+    .col-s-6 {flex: 50%;}
+    .col-s-7 {flex: 58.333%;}
+    .col-s-8 {flex: 66.667%;}
+    .col-s-9 {flex: 75%;}
+    .col-s-10 {flex: 83.333%;}
+    .col-s-11 {flex: 91.667%;}
+    .col-s-12 {flex: 100%;}
+}
+
+
+/* Tablets */
+/*------------------------------*/
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .col-m-1 {flex: 8.333%;}
+    .col-m-2 {flex: 16.667%;}
+    .col-m-3 {flex: 25%;}
+    .col-m-4 {flex: 33.333%;}
+    .col-m-5 {flex: 41.667%;}
+    .col-m-6 {flex: 50%;}
+    .col-m-7 {flex: 58.333%;}
+    .col-m-8 {flex: 66.667%;}
+    .col-m-9 {flex: 75%;}
+    .col-m-10 {flex: 83.333%;}
+    .col-m-11 {flex: 91.667%;}
+    .col-m-12 {flex: 100%;}
+
+}
+
+
+/* Desktop */
+/*------------------------------*/
+
+@media (min-width: 1200px) {
+
+    .col-l-1 {flex: 8.333%;}
+    .col-l-2 {flex: 16.667%;}
+    .col-l-3 {flex: 25%;}
+    .col-l-4 {flex: 33.333%;}
+    .col-l-5 {flex: 41.667%;}
+    .col-l-6 {flex: 50%;}
+    .col-l-7 {flex: 58.333%;}
+    .col-l-8 {flex: 66.667%;}
+    .col-l-9 {flex: 75%;}
+    .col-l-10 {flex: 83.333%;}
+    .col-l-11 {flex: 91.667%;}
+    .col-l-12 {flex: 100%;}
+}
 
