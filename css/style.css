@@ -702,15 +702,29 @@ footer .container {
     .col-s-10 {flex: 83.333%;}
     .col-s-11 {flex: 91.667%;}
     .col-s-12 {flex: 100%;}
+
+
+    /* Story section */
+    /*------------------------------*/
+
+    .story-section .story-container .story p {
+        padding-right: 0;
+    }
+
+    /* Contact section & Footer */
+    /*------------------------------*/
+
+    .contact-container .contact-row .social {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .contact-container .contact-row .social .icon-btn {
+        margin-top: 10px;
+    }
+    footer .container-footer .copyright, .contact-data {
+        justify-content: center;
+    }
 }
-
-/* Story section */
-/*------------------------------*/
-
-.story-section .story-container .story p {
-    padding-right: 0;
-}
-
 
 
 /*------------------------------*/
@@ -732,13 +746,12 @@ footer .container {
     .col-m-11 {flex: 91.667%;}
     .col-m-12 {flex: 100%;}
 
-}
+    /* Story section */
+    /*------------------------------*/
 
-/* Story section */
-/*------------------------------*/
-
-.story-section .story-container .story-second p {
-    padding-right: 0;
+    .story-section .story-container .story-second p {
+        padding-right: 0;
+    }
 }
 
 
