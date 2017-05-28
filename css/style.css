@@ -447,7 +447,7 @@ body .element:hover {
 /*------------------------------*/
 
 .buy {
-    max-width: 100%;
+    width: 100%;
     margin: 200px auto;
     background-color: #F54952;
 }
@@ -466,6 +466,7 @@ body .element:hover {
 }
 .buy .row-buy .buy-element h1 {
     margin-left: 50px;
+    text-align: left;
 }
 .buy .row-buy .buy-element > p {
     margin-left: 50px;
@@ -480,6 +481,8 @@ body .element:hover {
     display: block;
     height: 30px;
     width: 110px;
+    max-height: 100%;
+    max-width: 100%;
     font-size: 15px;
     font-weight: bold;
     background-color: #ccccd7;
@@ -490,6 +493,8 @@ body .element:hover {
 .buy .row-buy .buy-element .buy-button {
     width: 150px;
     height: 50px;
+    max-width: 100%;
+    max-height: 100%;
     border-radius: 10px;
     border: none;
     font-size: 15px;
@@ -498,6 +503,7 @@ body .element:hover {
     cursor: pointer;
     margin: 30px auto 20px 50px;
     text-transform: uppercase;
+    word-break: wrap;
 }
 .buy .row-buy .buy-element .stars .star {
     border-radius: 10px;
