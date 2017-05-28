@@ -22,9 +22,6 @@ p::selection, h1::selection {
     background-color: #fa9600;
     color: #FFF;
 }
-/*[class*="col-"] {
-    width: 100%
-}*/
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -209,6 +206,8 @@ a i.fa {
     align-items: center;
     width: 350px;
     height: 70px;
+    max-width: 100%;
+    max-height: 100%;
     background-color: #F54952;
     border: none;
     color: white;
@@ -553,11 +552,12 @@ body .element:hover {
 }
 .download .download-container .download-button {
     margin: auto;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .download .download-container h1 {
     font-size: 30px;
     color: #808080;
+    margin: 0;
 }
 .download .download-container p {
     font-weight: bold;
