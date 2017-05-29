@@ -716,8 +716,48 @@ footer .container {
     /* Navigation */
     /*------------------------------*/
 
+    header {
+        height: auto;
+    }
+    header .container {
+        display: inline-block;
+        width: 100%;
+    }
+    nav .logo {
+        display: inline-block;
+
+    }
+    nav label {
+        display: inline-block;
+        float: right;
+        font-size: 30px;
+        align-items: center;
+        margin-right: 10px;
+    }
+    nav label .fa {
+        vertical-align: middle;
+    }
     nav #menu-button:not(:checked) ~ul {
         display: none;
+    }
+    nav #menu-button:checked ~ul {
+        visibility: visible;
+    }
+    nav #menu {
+        display: block;
+        list-style-type: none;
+        width: 90%;
+        float: none;
+        margin: 0 auto;
+    }
+    nav #menu li {
+        display: block;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+    }
+    nav #menu li a {
     }
 
     /* Story section */
