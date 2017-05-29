@@ -36,7 +36,7 @@ header .container {
     flex-direction: row;
     justify-content: space-between;
 }
-.Logo {
+.logo {
 	display: flex;
 	align-items: center;
     justify-content: flex-start;
@@ -710,6 +710,10 @@ footer .container {
     .col-s-12 {flex: 100%;}
 
 
+    /* Navigation */
+    /*------------------------------*/
+
+
     /* Story section */
     /*------------------------------*/
 
@@ -724,11 +728,20 @@ footer .container {
         margin-top: 20px;
         margin-bottom: 20px;
     }
+    .contact-container .contact-row .about {
+        margin: 0 10px;
+    }
     .contact-container .contact-row .social .icon-btn {
         margin-top: 10px;
     }
+    footer .container-footer .copyright {
+        justify-content: center;
+        text-align: center;
+        padding-right: 0;
+    }
     footer .container-footer .copyright, .contact-data {
         justify-content: center;
+        text-align: center;
     }
 }
 
@@ -751,6 +764,39 @@ footer .container {
     .col-m-10 {flex: 83.333%;}
     .col-m-11 {flex: 91.667%;}
     .col-m-12 {flex: 100%;}
+
+    /* Navigation */
+    /*------------------------------*/
+
+    header {
+        height: auto;
+    }
+    header .container {
+        flex-direction: column;
+    }
+    nav .logo {
+        flex: 1 100%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    /*header nav #menu {
+        display: block;
+        text-align: center;
+        float: none;
+        margin: 0 auto;
+        width: 600px;
+    }
+    header nav #menu li {
+        display: inline-block;
+        text-align: center;
+        padding: 0 10px;
+        margin: 0 auto;
+        width: 150px;
+    }
+    header nav #menu {
+        flex-wrap: wrap;
+    }*/
+
 
     /* Story section */
     /*------------------------------*/
