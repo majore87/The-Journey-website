@@ -47,6 +47,9 @@ header .container {
     background-color: #F4F4F4;
     text-transform: uppercase;
 }
+nav label, input {
+    display: none;
+}
 #menu {
     background: linear-gradient(135deg, #fa9600, #F54952);
     display: flex;
@@ -713,6 +716,9 @@ footer .container {
     /* Navigation */
     /*------------------------------*/
 
+    nav #menu-button:not(:checked) ~ul {
+        display: none;
+    }
 
     /* Story section */
     /*------------------------------*/
@@ -779,24 +785,10 @@ footer .container {
         margin: 0 auto;
         justify-content: center;
     }
-    /*header nav #menu {
-        display: block;
-        text-align: center;
-        float: none;
-        margin: 0 auto;
-        width: 600px;
-    }
-    header nav #menu li {
-        display: inline-block;
-        text-align: center;
-        padding: 0 10px;
-        margin: 0 auto;
-        width: 150px;
-    }
     header nav #menu {
-        flex-wrap: wrap;
-    }*/
-
+        height: 48px;
+        margin: 0 auto;
+    }
 
     /* Story section */
     /*------------------------------*/
@@ -805,8 +797,6 @@ footer .container {
         padding-right: 0;
     }
 }
-
-
 
 
 /*------------------------------*/
