@@ -48,22 +48,22 @@ buttonAnimation.addEventListener('click', function() {
 	opacity(newElemQuote);
 	opacity(newElemGandalf);
 	checkOnclickEvent('Item added');
-	removeButton(parent, buttonAnimation);
+	removeElement(parent, buttonAnimation);
 
 
 	var backButton = document.getElementById('keepItSafe');
 
 	backButton.addEventListener('click', function() {
-		removeButton(animationSection, newElemRing);
-		removeButton(animationSection, newElemQuote);
-		removeButton(animationSection, newElemGandalf);
-		removeButton(animationSection, backButton);
-		animationSection.appendChild(buttonAnimation);
+		removeElement(animationSection, newElemRing);
+		removeElement(animationSection, newElemQuote);
+		removeElement(animationSection, newElemGandalf);
+		removeElement(animationSection, backButton);
+		parent.appendChild(buttonAnimation);
 	});
 
 });
 
 // Remove function
-function removeButton(param1, param2) {
+function removeElement(param1, param2) {
 	param1.removeChild(param2);
 }
