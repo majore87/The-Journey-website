@@ -718,6 +718,7 @@ footer .container {
 
     header {
         height: auto;
+        margin-bottom: 10px;
     }
     header .container {
         display: inline-block;
@@ -760,6 +761,28 @@ footer .container {
     nav #menu li a {
     }
 
+    /* Slideshow */
+    /*------------------------------*/
+
+    .slideshow-container {
+        height: auto;
+    }
+
+    .slideshow-container .slides .text {
+        position: relative;
+        font-size: 20px;
+        color: #000;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .slideshow-container .slides img {
+        height: auto;
+        position: static;
+    }
+    .slideshow-container .prev, .next {
+        /*position: static;*/
+    }
+
     /* Story section */
     /*------------------------------*/
 
@@ -776,6 +799,7 @@ footer .container {
     }
     .contact-container .contact-row .about {
         margin: 0 10px;
+        margin-top: 10px;
     }
     .contact-container .contact-row .social .icon-btn {
         margin-top: 10px;
@@ -816,6 +840,7 @@ footer .container {
 
     header {
         height: auto;
+        margin-bottom: 10px;
     }
     header .container {
         flex-direction: column;
@@ -828,6 +853,20 @@ footer .container {
     header nav #menu {
         height: 48px;
         margin: 0 auto;
+    }
+
+    /* Slideshow */
+    /*------------------------------*/
+
+    .slideshow-container .slides .text {
+        font-size: 20px;
+        height: auto;
+        position: absolute;
+        top: 72%;
+    }
+    .slideshow-container .slides img {
+        /*height: auto;*/
+        position: absolute;
     }
 
     /* Story section */
