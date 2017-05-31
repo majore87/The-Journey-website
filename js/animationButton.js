@@ -3,14 +3,19 @@ function checkOnclickEvent(param) {
 	console.log(param);
 }
 
+// Get section and animation-start button
 var animationSection = document.getElementById('animation');
 	buttonAnimation = document.getElementById('animation-start');
- 	newElemBackButton = document.createElement('button');
-	newElemRing = document.createElement('div');
-	parent = document.getElementById('parent');
 
 //Listener for button to add new element div, h1
 buttonAnimation.addEventListener('click', function() {
+
+	var animationSection = document.getElementById('animation');
+		buttonAnimation = document.getElementById('animation-start');
+	 	newElemBackButton = document.createElement('button');
+		newElemRing = document.createElement('div');
+		parent = document.getElementById('parent');
+
 	//assign ring class to new div
 	newElemRing.className = "ring";
 	newElemRing.style.opacity = 0;
@@ -32,6 +37,7 @@ buttonAnimation.addEventListener('click', function() {
 	animationSection.appendChild(newElemGandalf);
 	animationSection.appendChild(newElemBackButton);
 
+	// function for smooth appeard of elements
 	function opacity(param) {
 	var steps = 0;
 	var timer = setInterval(function() {
@@ -60,10 +66,9 @@ buttonAnimation.addEventListener('click', function() {
 		removeElement(animationSection, backButton);
 		parent.appendChild(buttonAnimation);
 	});
-
 });
 
-// Remove function
+// Function to remove elements
 function removeElement(param1, param2) {
 	param1.removeChild(param2);
 }
