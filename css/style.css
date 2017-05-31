@@ -299,15 +299,17 @@ a i.fa {
 
 .animation-ring > h1, .animation-ring > p {
     font-family: 'Eagle Lake', cursive;
-    display: flex;
-    justify-content: flex-end;
+    /*display: flex;
+    justify-content: flex-end;*/
+    margin: 0 auto;
 }
 .animation-ring > h1 {
     font-size: 30px;
 }
 .animation-ring > p {
-    display: flex;
+    /*display: flex;*/
     font-size: 25px;
+    position: static;
 }
 
 /*------------------------------*/
