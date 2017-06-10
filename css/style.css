@@ -26,6 +26,9 @@ p::selection, h1::selection {
     display: flex;
     flex-wrap: wrap;
 }
+button {
+    outline: none;
+}
 
 /*------------------------------*/
 /* Navigation */
@@ -71,9 +74,13 @@ nav ul li {
 }
 nav ul li a {
   	text-decoration: none;
-  	color: white;
+  	color: #FFF;
 }
-nav ul li:first-child:hover {
+
+/* Navigation HOVER */
+/*------------------------------*/
+
+nav ul li:first-child:hover, li:nth-child(2):hover, li:nth-child(3):hover, li:last-child:hover {
     background-position: 0 100%;
     color: #8e44ad;
     background-image: linear-gradient(45deg, #C63473 30%, transparent 60%);
@@ -81,25 +88,10 @@ nav ul li:first-child:hover {
     border-radius: 10px;
 }
 nav ul li:nth-child(2):hover {
-    background-position: 0 100%;
-    color: #8e44ad;
     background-image: linear-gradient(90deg, #C63473 30%, transparent 60%);
-    border-color: #8e44ad;
-    border-radius: 10px;
 }
 nav ul li:nth-child(3):hover {
-    background-position: 0 100%;
-    color: #8e44ad;
     background-image: linear-gradient(135deg, #C63473 30%, transparent 60%);
-    border-color: #8e44ad;
-    border-radius: 10px;
-}
-nav ul li:last-child:hover {
-    background-position: 0 100%;
-    color: #8e44ad;
-    background-image: linear-gradient(45deg, #C63473 30%, transparent 60%);
-    border-color: #8e44ad;
-    border-radius: 10px;
 }
 
 /*------------------------------*/
@@ -213,7 +205,7 @@ a i.fa {
     max-height: 100%;
     background-color: #F54952;
     border: none;
-    color: white;
+    color: #FFF;
     font-size: 25px;
     transition: 0.5s;
     border-radius: 10px;
@@ -245,6 +237,9 @@ a i.fa {
     transform: translate(-50%, -50%);
     width: 400px;
     height: 400px;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
 }
 .ring:before, .ring:after {
     content: "";
@@ -267,29 +262,23 @@ a i.fa {
 @keyframes clockwise {
     0% {
         transform: rotateZ(0deg) scaleX(1) scaleY(1);
-        -webkit-transform: rotateZ(0deg) scaleX(1) scaleY(1);
     }
     50% {
         transform: rotateZ(180deg) scaleX(0.80) scaleY(0.95);
-        -webkit-transform: rotateZ(180deg) scaleX(0.80) scaleY(0.95);
     }
     100% {
         transform: rotateZ(360deg) scaleX(1) scaleY(1);
-        -webkit-transform: rotateZ(360deg) scaleX(1) scaleY(1);
     }
 }
 @keyframes counterclockwise {
     0% {
         transform: rotateZ(0deg) scaleX(1) scaleY(1);
-        -webkit-transform: rotateZ(0deg) scaleX(1) scaleY(1);
     }
     50% {
         transform: rotateZ(-180deg) scaleX(0.95) scaleY(0.85);
-        -webkit-transform: rotateZ(-180deg) scaleX(0.95) scaleY(0.85);
     }
     100% {
         transform: rotateZ(-360deg) scaleX(1) scaleY(1);
-        -webkit-transform: rotateZ(-360deg) scaleX(1) scaleY(1);
     }
 }
 
@@ -299,17 +288,17 @@ a i.fa {
 
 .animation-ring > h1, .animation-ring > p {
     font-family: 'Eagle Lake', cursive;
-    /*display: flex;
-    justify-content: flex-end;*/
-    margin: 0 auto;
+    margin: 20px auto;
+    position: absolute;
+    top: 60%;
 }
 .animation-ring > h1 {
     font-size: 30px;
+    top: 40%;
 }
 .animation-ring > p {
-    /*display: flex;*/
     font-size: 25px;
-    position: static;
+    top: 100%;
 }
 
 /*------------------------------*/
@@ -370,14 +359,14 @@ a i.fa {
     margin: 200px auto 150px auto;
 }
 .gallery h1 {
-    color: grey;
+    color: #808080;
     font-size: 50px;
     display: flex;
     justify-content: center;
     padding-top: 40px;
 }
 .gallery:hover h1 {
-    color: white;
+    color: #FFF;
 }
 .element {
     height: 90px;
@@ -442,7 +431,7 @@ body .element:hover {
     color: #fa9600;
     transition: .3s;
 }
-.benefits .row-benefits .benefits-element:hover .benefits-btn{
+.benefits .row-benefits .benefits-element:hover .benefits-btn {
     color: #DC3E64;
     transition: .3s;
 }
@@ -522,7 +511,6 @@ body .element:hover {
     margin-left: 50px;
 }
 
-
 /* Buy section HOVER */
 /*------------------------------*/
 
@@ -532,19 +520,19 @@ body .element:hover {
     border-radius: 10px;
     box-shadow: 0 20px 30px 0 rgba(0, 0, 0, .2);
 }
+.buy .row-buy .buy-element:hover p, .span-label, .buy-button {
+    transition: .3s;
+}
 .buy .row-buy .buy-element:hover .span-label {
     background-color: #C63473;
-    transition: .3s;
     border-radius: 10px;
 }
 .buy .row-buy .buy-element:hover .buy-button {
     background-color: #F54952;
     color: #F4F4F4;
-    transition: .3s;
 }
 .buy .row-buy .buy-element:hover p {
     color: #808080;
-    transition: .3s;
 }
 .buy .row-buy .buy-element:hover .stars .star {
     color: #fa9600;
@@ -599,17 +587,10 @@ body .element:hover {
 .contact-container .contact-row p {
     color: #F4F4F4;
 }
-.contact-container .contact-row .location {
-    text-align: center;
-}
-.contact-container .contact-row .social {
-    text-align: center;
-}
-.contact-container .contact-row .social .social-buttons {
+.contact-container .contact-row .location, .about, .social, .social .social-buttons {
     text-align: center;
 }
 .contact-container .contact-row .about {
-    text-align: center;
     width: 350px;
 }
 
@@ -627,11 +608,6 @@ body .element:hover {
     cursor: pointer;
     font-size: 30px;
 }
-.social .social-buttons .icon-btn:hover {
-    transform: scale(1.10);
-    transition: .4s;
-    color: #FFF;
-}
 .social .social-buttons .twitter {
     color: #4099FF;
 }
@@ -646,6 +622,15 @@ body .element:hover {
 }
 .social .social-buttons .github {
     color: #4183C4;
+}
+
+/* Social media buttons HOVER */
+/*------------------------------*/
+
+.social .social-buttons .icon-btn:hover {
+    transform: scale(1.10);
+    transition: .4s;
+    color: #FFF;
 }
 .social .social-buttons .twitter:hover {
     background-color: #4099FF;
@@ -728,7 +713,6 @@ footer .container {
     }
     nav .logo {
         display: inline-block;
-
     }
     nav label {
         display: inline-block;
@@ -769,7 +753,6 @@ footer .container {
     .slideshow-container {
         height: auto;
     }
-
     .slideshow-container .slides .text {
         position: relative;
         font-size: 20px;
@@ -780,9 +763,6 @@ footer .container {
     .slideshow-container .slides img {
         height: auto;
         position: static;
-    }
-    .slideshow-container .prev, .next {
-        /*position: static;*/
     }
 
     /* Story section */
