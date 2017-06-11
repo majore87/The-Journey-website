@@ -312,6 +312,8 @@ a i.fa {
 .story-section .story-title fieldset {
     box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, .2);
     border: 2px solid;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 .story-section .story-container {
     max-width: 1200px;
@@ -410,7 +412,6 @@ body .element:hover {
 }
 .benefits .row-benefits .benefits-element {
     text-align: center;
-    cursor: pointer;
     margin-top: 50px;
 }
 .benefits .row-benefits .benefits-element .benefits-btn {
@@ -594,7 +595,6 @@ body .element:hover {
     width: 350px;
 }
 
-
 /* Social media buttons */
 /*------------------------------*/
 
@@ -710,6 +710,7 @@ footer .container {
     header .container {
         display: inline-block;
         width: 100%;
+        text-align: center;
     }
     nav .logo {
         display: inline-block;
@@ -732,6 +733,7 @@ footer .container {
     }
     nav #menu {
         display: block;
+        flex-direction: column;
         list-style-type: none;
         width: 90%;
         float: none;
@@ -743,8 +745,6 @@ footer .container {
         height: 50px;
         text-align: center;
         line-height: 50px;
-    }
-    nav #menu li a {
     }
 
     /* Slideshow */
@@ -768,8 +768,28 @@ footer .container {
     /* Story section */
     /*------------------------------*/
 
+    .story-section .story-title fieldset {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
     .story-section .story-container .story p {
         padding-right: 0;
+    }
+
+    /*------------------------------*/
+    /* Buy section */
+    /*------------------------------*/
+
+    .buy .row-buy {
+        max-width: 90%;
+    }
+
+    /* Download section */
+    /*------------------------------*/
+
+    .download .download-container h1, p {
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
     /* Contact section & Footer */
@@ -853,8 +873,35 @@ footer .container {
     /* Story section */
     /*------------------------------*/
 
+    .story-section .story-title fieldset {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
     .story-section .story-container .story-second p {
         padding-right: 0;
+    }
+
+    /* Buy section */
+    /*------------------------------*/
+
+    .buy .row-buy {
+        max-width: 90%;
+    }
+
+    /* Download section */
+    /*------------------------------*/
+
+    .download h1 {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    /* Contact section & Footer */
+    /*------------------------------*/
+
+    .contact-container .contact-row .about {
+        margin: 0 10px;
+        margin-top: 10px;
     }
 }
 
