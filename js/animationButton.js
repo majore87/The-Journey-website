@@ -5,13 +5,11 @@ var animationSection = document.getElementById('animation');
 //Listener for button to add new element div, h1
 buttonAnimation.addEventListener('click', function() {
 
-<<<<<<< HEAD
 	var animationSection = document.getElementById('animation');
 		buttonAnimation = document.getElementById('animation-start');
 	 	newElemBackButton = document.createElement('button');
-=======
+
 	var newElemBackButton = document.createElement('button');
->>>>>>> Responsive_design
 		newElemRing = document.createElement('div');
 		parent = document.getElementById('parent');
 
@@ -21,12 +19,9 @@ buttonAnimation.addEventListener('click', function() {
 
 	// Create new elements
 	var newElemQuote = document.createElement('h1');
-<<<<<<< HEAD
 	newElemQuote.innerHTML = "Keep it secret! Keep it safe!";
-=======
 		newElemQuote.innerHTML = "Keep it secret! Keep it safe!";
 
->>>>>>> Responsive_design
 	var newElemGandalf = document.createElement('p');
 		newElemGandalf.innerHTML = "Gandalf (13.04.3018r TE)";
 

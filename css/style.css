@@ -699,6 +699,13 @@ footer .container {
     .col-s-11 {flex: 91.667%;}
     .col-s-12 {flex: 100%;}
 
+    /* General */
+    /*------------------------------*/
+
+    .animation-button {
+        width: 200px;
+    }
+
 
     /* Navigation */
     /*------------------------------*/
@@ -714,6 +721,7 @@ footer .container {
     }
     nav .logo {
         display: inline-block;
+        line-height: 80px;
     }
     nav label {
         display: inline-block;
@@ -721,9 +729,7 @@ footer .container {
         font-size: 30px;
         align-items: center;
         margin-right: 10px;
-    }
-    nav label .fa {
-        vertical-align: middle;
+        line-height: 80px;
     }
     nav #menu-button:not(:checked) ~ul {
         display: none;
