@@ -5,21 +5,23 @@ function checkOnclickEvent(param) {
 
 var animationSection = document.getElementById('animation');
 	buttonAnimation = document.getElementById('animation-start');
- 	newElemBackButton = document.createElement('button');
-	newElemRing = document.createElement('div');
-	parent = document.getElementById('parent');
 
 //Listener for button to add new element div, h1
 buttonAnimation.addEventListener('click', function() {
+
+	var newElemBackButton = document.createElement('button');
+		newElemRing = document.createElement('div');
+		parent = document.getElementById('parent');
+
 	//assign ring class to new div
 	newElemRing.className = "ring";
 	newElemRing.style.opacity = 0;
 
 	var newElemQuote = document.createElement('h1');
-	newElemQuote.innerHTML = "Keep it secret! Keep it safe!";
+		newElemQuote.innerHTML = "Keep it secret! Keep it safe!";
 
 	var newElemGandalf = document.createElement('p');
-	newElemGandalf.innerHTML = "Gandalf (13.04.3018r TE)";
+		newElemGandalf.innerHTML = "Gandalf (13.04.3018r TE)";
 
 	//add text and two classes to "back-button"
 	newElemBackButton.innerHTML = "Keep it safe!";
