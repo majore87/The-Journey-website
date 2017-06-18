@@ -54,7 +54,7 @@ nav label, input {
     display: none;
 }
 #menu {
-    background: linear-gradient(135deg, #fa9600, #F54952);
+    background-image: linear-gradient(135deg, #fa9600, #F54952);
     display: flex;
     justify-content: flex-end;
     list-style: none;
@@ -173,15 +173,13 @@ a i.fa {
 /* Slideshow animation */
 /*------------------------------*/
 
-.fade {
-    animation: fade;
-    animation-duration: 1.5s;
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-}
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+.fade {
+    animation: fade;
+    animation-duration: 1.5s;
 }
 
 /*------------------------------*/
@@ -209,7 +207,7 @@ a i.fa {
     font-size: 25px;
     transition: 0.5s;
     border-radius: 10px;
-    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2);
 }
 .animation-button:hover {
     transform: scale(1.1);
@@ -224,6 +222,28 @@ a i.fa {
 /* Ring animation */
 /*------------------------------*/
 
+@keyframes clockwise {
+    0% {
+        transform: rotateZ(0deg) scaleX(1) scaleY(1);
+    }
+    50% {
+        transform: rotateZ(180deg) scaleX(0.80) scaleY(0.95);
+    }
+    100% {
+        transform: rotateZ(360deg) scaleX(1) scaleY(1);
+    }
+}
+@keyframes counterclockwise {
+    0% {
+        transform: rotateZ(0deg) scaleX(1) scaleY(1);
+    }
+    50% {
+        transform: rotateZ(-180deg) scaleX(0.95) scaleY(0.85);
+    }
+    100% {
+        transform: rotateZ(-360deg) scaleX(1) scaleY(1);
+    }
+}
 .animation-ring {
     max-width: 500px;
     max-height: 500px;
@@ -259,28 +279,6 @@ a i.fa {
     box-shadow: inset 0 25px 25px #fafa00, inset 25px 0 25px #fac800, inset 0 -25px 25px #fa9600, inset -25px 0 25px #fa6400;
     animation: clockwise 2.5s -0.5s linear infinite;
 }
-@keyframes clockwise {
-    0% {
-        transform: rotateZ(0deg) scaleX(1) scaleY(1);
-    }
-    50% {
-        transform: rotateZ(180deg) scaleX(0.80) scaleY(0.95);
-    }
-    100% {
-        transform: rotateZ(360deg) scaleX(1) scaleY(1);
-    }
-}
-@keyframes counterclockwise {
-    0% {
-        transform: rotateZ(0deg) scaleX(1) scaleY(1);
-    }
-    50% {
-        transform: rotateZ(-180deg) scaleX(0.95) scaleY(0.85);
-    }
-    100% {
-        transform: rotateZ(-360deg) scaleX(1) scaleY(1);
-    }
-}
 
 /*------------------------------*/
 /* Gandalf quote */
@@ -310,7 +308,7 @@ a i.fa {
     margin: 0 auto 100px auto;
 }
 .story-section .story-title fieldset {
-    box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.2);
     border: 2px solid;
     margin-left: 50px;
     margin-right: 50px;
@@ -519,10 +517,10 @@ body .element:hover {
     background-color: #F4F4F4;
     transition: .3s;
     border-radius: 10px;
-    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2);
 }
 .buy .row-buy .buy-element:hover p, .span-label, .buy-button {
-    transition: .3s;
+    transition: 0.3s;
 }
 .buy .row-buy .buy-element:hover .span-label {
     background-color: #C63473;
@@ -538,7 +536,7 @@ body .element:hover {
 .buy .row-buy .buy-element:hover .stars .star {
     color: #fa9600;
     background-color: #F4F4F4;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 /*------------------------------*/
@@ -570,7 +568,7 @@ body .element:hover {
 
 .contact-container {
     max-width: 100%;
-    background: linear-gradient(180deg, #fa9600, #F54952);
+    background-image: linear-gradient(180deg, #fa9600, #F54952);
     margin: 0 auto;
     margin-top: 100px;
 }
@@ -653,7 +651,7 @@ body .element:hover {
 /*------------------------------*/
 
 footer {
-	background: linear-gradient(180deg, #F54952, #DC3E64);
+	background-image: linear-gradient(180deg, #F54952, #DC3E64);
 	color: #F4F4F4;
 }
 footer .container {
@@ -782,7 +780,6 @@ footer .container {
         padding-right: 0;
     }
 
-    /*------------------------------*/
     /* Buy section */
     /*------------------------------*/
 
