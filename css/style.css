@@ -215,7 +215,6 @@ a i.fa {
 }
 .back-button {
     margin: 0 auto;
-    margin-top: 100px;
 }
 
 /*------------------------------*/
@@ -245,11 +244,11 @@ a i.fa {
     }
 }
 .animation-ring {
-    max-width: 500px;
-    max-height: 500px;
     position: relative;
-    display: block;
-    margin: 200px auto;
+    display: none;
+    margin: 0 auto;
+    margin-top: 400px;
+    margin-bottom: 100px;
 }
 .ring {
     display: block;
@@ -257,9 +256,9 @@ a i.fa {
     transform: translate(-50%, -50%);
     width: 400px;
     height: 400px;
-    top: 50%;
+    top: -400px;
     left: 50%;
-    margin-top: -200px;
+    margin-top: 200px;
 }
 .ring:before, .ring:after {
     content: "";
@@ -287,16 +286,14 @@ a i.fa {
 .animation-ring > h1, .animation-ring > p {
     font-family: 'Eagle Lake', cursive;
     margin: 20px auto;
-    position: absolute;
-    top: 60%;
 }
 .animation-ring > h1 {
     font-size: 30px;
-    top: 40%;
+    text-align: center;
 }
 .animation-ring > p {
     font-size: 25px;
-    top: 100%;
+    text-align: center;
 }
 
 /*------------------------------*/
@@ -766,6 +763,20 @@ footer .container {
         position: static;
     }
 
+    /* Animation ring */
+    /*------------------------------*/
+
+    .button-start {
+        margin: 100px auto;
+    }
+    .animation-ring {
+        margin-top: 260px;
+    }
+    .animation-ring .ring {
+        width: 250px;
+        height: 250px;
+    }
+
     /* Story section */
     /*------------------------------*/
 
@@ -855,6 +866,14 @@ footer .container {
     header nav #menu {
         height: 48px;
         margin: 0 auto;
+    }
+
+    /* Animation ring */
+    /*------------------------------*/
+
+    .animation-ring .ring {
+        width: 250px;
+        height: 250px;
     }
 
     /* Slideshow */
