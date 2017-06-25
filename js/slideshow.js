@@ -6,6 +6,8 @@ function showPictures(n) {
 		dots = document.getElementsByClassName('dot');
 		slidesLength = slides.length;
 		dotsLength = dots.length;
+		console.log(n);
+		console.log(slideIndex);
 
 	if (n > slidesLength) {
 		slideIndex = 1;
