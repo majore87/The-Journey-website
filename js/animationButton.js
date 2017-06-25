@@ -56,6 +56,7 @@ buttonAnimation.addEventListener('click', function() {
 
 	// after added new elements with opacity feature first button deleted
 	removeElement(parent, buttonAnimation);
+	parent.style.display = 'none';
 
 	// Get new created button "keepItSafe" and store in new variable
 	var backButton = document.getElementById('keepItSafe');
@@ -68,6 +69,7 @@ buttonAnimation.addEventListener('click', function() {
 		removeElement(animationSection, newElemGandalf);
 		removeElement(animationSection, backButton);
 		// Create button animation for infinite loop for user.
+		parent.style.display = 'flex';
 		parent.appendChild(buttonAnimation);
 	});
 });
